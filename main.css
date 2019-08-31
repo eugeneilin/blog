@@ -8,36 +8,16 @@
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  scroll-behavior: smooth;
 }
 
 html {
   font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 26px;
-}
-
-p {
-  font-size: 20px;
-  font-weight: 200;
-}
-
-.blue {
-  color: #1f98ff;
-}
-
-.bold {
-  font-weight: 500;
-}
-
 .nav {
   width: 100%;
-  height: 110px;
+  height: 14vh;
 }
 
 .navWrapper {
@@ -92,8 +72,9 @@ p {
 .imageSectionWrapper {
   width: 80%;
   margin: auto;
+  position: relative;
   display: block;
-  height: 800px;
+  height: 70vh;
   background-image: url(img/david-henrichs-399195.jpg);
   background-position: center;
   -webkit-background-size: cover;
@@ -106,33 +87,44 @@ p {
   bottom: 0;
 }
 
-.imageSectionWrapper h1 {
+.title {
   color: white;
   background-color: #1c2329;
-  width: 680px;
+  font-size: 1.5em;
+  width: 100%;
   text-align: center;
-  padding: 0.25em;
+  padding: .2em;
   opacity: 0.97;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  margin: 0 0 20px -60px;
+  margin: 0 0 .8em -3em;
 }
 
 .info {
   color: white;
+  font-size: .9em;
   background-color: #1c2329;
-  width: 680px;
+  width: 55vw;
   opacity: 0.97;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
-  border-radius: 2px;
-  margin: 0 0 40px -30px;
-  padding: 0.25em 0.25em 0.25em 3em;
+  border-radius: .4em;
+  margin: 0 0 1.4em -2.2em;
+  padding: .4em 3em;
 }
 
-.info p {
-  margin: 15px 0;
+.details {
+  padding: .2em 0;
+}
+
+.links {
+  color: #1f98ff;
+  text-decoration: none;
+}
+
+.article-date {
+  font-weight: bold;
 }
 
 .content {
@@ -151,30 +143,33 @@ p {
 
 .sideBar {
   flex: 1;
-  margin-top: 30px;
   text-align: right;
 }
 
 .mainContent p {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: .5em;
+  margin-bottom: 1em;
   color: #65747e;
-  line-height: 40px;
+  line-height: 2em;
 }
 
 .mainContent h1 {
-  margin-top: 75px;
+  margin-top: 3em;
 }
 
 .mainContent h3 {
   margin-top: 75px;
 }
 
-.mainContent img {
+.main-content-image {
+  width: 55vw;
+}
+
+.related-image {
   width: 90%;
 }
 
-.tags p{
+.tags p {
   display: inline-block;
   margin: 30px 10px 0 10px;
   background-color: #e4eaef;
@@ -212,9 +207,9 @@ p {
 }
 
 .footer {
-  height: 110px;
+  height: 14vh;
   width: 100%;
-  line-height: 110px;
+  line-height: 14vh;
 }
 
 .footerWrapper {
